@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Visit Counter</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/">🚀 Dockerized Flask App</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/stats">Stats</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="/reset">Reset</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container text-center mt-5">
+    <div class="card shadow-lg p-5 border-0 rounded-4">
+      <h1 class="mb-3 text-primary"><i class="bi bi-bar-chart-line-fill"></i> Visitor Counter</h1>
+      <h2 class="mb-4">This page has been visited:</h2>
+      <h1 class="display-1 fw-bold text-success">{{ count }}</h1>
+      <p class="text-muted">times since last reset</p>
+      <div class="mt-4">
+        <a href="/stats" class="btn btn-info btn-lg me-2"><i class="bi bi-graph-up"></i> View Stats</a>
+        <a href="/reset" class="btn btn-danger btn-lg"><i class="bi bi-arrow-clockwise"></i> Reset Counter</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center mt-5 text-muted">
+    <p>© 2025 Dockerized Flask Project | Made with ❤️ by Prasenjit</p>
+  </footer>
+
+</body>
+</html>
